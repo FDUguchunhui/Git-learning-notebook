@@ -37,6 +37,10 @@ You can use it to unstage what is in the index
 git revert
 ```
 
+You can use this to prune a remote that was locally cached but doesn't exist anymore. 
+```
+git remote prune origin
+```
 
 # reset
 `git reset is` a very powerful and meanwhile dangerous command
