@@ -107,4 +107,8 @@ git clean -n -d
 git clean -f -d
 ```
 
+# if you want to get the up-to-date information of your remote repo, you can use `git remote update`. by default, it update all the branches.
 ```
+git remote update
+```
+
