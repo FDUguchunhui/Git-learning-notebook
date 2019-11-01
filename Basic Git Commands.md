@@ -87,6 +87,8 @@ git branch -d branch_name # delete a local branch
 # you may need to use -D which is the shortcut for --delete --force when the branch you want to delete haven't fully merged in its upstream branch, or not in HEAD if no upstream was set with --track or --set-upstream-to.
 git branch -D branch_name
 git push remote --delete branch_name # delete a remote branch
+# or you can use
+git fetch --prune
 ```
 
 
@@ -106,6 +108,8 @@ git clean -f
 git clean -n -d 
 git clean -f -d
 ```
+
+git fetch learned --all and --multiple options, to run fetch from many repositories, and --prune option to remove remote tracking branches that went stale. These make git remote update and git remote prune less necessary (there is no plan to remove remote update nor remote prune, though).
 
 # if you want to get the up-to-date information of your remote repo, you can use `git remote update`. by default, it update all the branches.
 ```
