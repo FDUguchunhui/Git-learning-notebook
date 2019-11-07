@@ -116,3 +116,16 @@ git fetch learned --all and --multiple options, to run fetch from many repositor
 git remote update
 ```
 
+# you can use `git checkout` to revert a specific file or directory to a commit
+```
+git checkout commit -- file  # you need '--' before file name if you file and branch has the same name.
+```
+
+
+# you can delete the file/directory on the remote repo but later added into .gitignore
+```
+git rm -r --cached some-directory
+git commit -m 'Remove the now ignored directory "some-directory"'
+git push origin master
+```
+
