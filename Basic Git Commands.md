@@ -30,6 +30,16 @@ git rm -cached fileA
 git status # it will show that what is staged is a delete option for fileA while fileA is untracked
 ```
 
+You can use it with .gitignore file to untrack file and ignore it on the next `git add`
+```
+git rm -r --cached
+#This removes any changed files from the index(staging area), then run:
+git add .
+git commit -m ".gitignore is now working"
+#To undo
+git rm --cached filename, use git add filename
+```
+
 # revert
 `git revert is` a very powerful command
 You can use it to unstage what is in the index
