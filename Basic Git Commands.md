@@ -40,6 +40,11 @@ git commit -m ".gitignore is now working"
 git rm --cached filename, use git add filename
 ```
 
+You can also check for how to set a global .gitignore file
+```
+https://sebastiandedeyne.com/setting-up-a-global-gitignore-file/
+```
+
 # revert
 `git revert is` a very powerful command
 You can use it to unstage what is in the index without changing the commit history
