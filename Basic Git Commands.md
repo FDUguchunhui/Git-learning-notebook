@@ -42,7 +42,7 @@ git rm --cached filename, use git add filename
 
 # revert
 `git revert is` a very powerful command
-You can use it to unstage what is in the index
+You can use it to unstage what is in the index without changing the commit history
 ```
 git revert
 ```
@@ -85,7 +85,7 @@ git pull git://info.example.com/ nitfol
 echo 'this is a message > message.txt
 git add message.txt
 git status
-rm --cached message.txt
+git rm --cached message.txt
 git status # check whether message.txt is already removed
 ```
 
@@ -131,11 +131,4 @@ git remote update
 git checkout commit -- file  # you need '--' before file name if you file and branch has the same name.
 ```
 
-
-# you can delete the file/directory on the remote repo but later added into .gitignore
-```
-git rm -r --cached some-directory
-git commit -m 'Remove the now ignored directory "some-directory"'
-git push origin master
-```
 
